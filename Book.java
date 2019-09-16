@@ -66,10 +66,13 @@ class Book
     
     public void printDetails()
     {
+        if (refNumber.length() == 0)
+            refNumber = "ZZZ";
         System.out.println("********");
         System.out.println("Title: "+title);
         System.out.println("Author: "+author);
         System.out.println("Pages: "+pages);
+        System.out.println("Reference #: "+refNumber);
         System.out.println("********");
     }
 }
