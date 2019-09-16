@@ -14,12 +14,13 @@ class Book
     private int pages;
     private String refNumber;
     private int borrow;
+    private boolean courseText;
 
     /**
      * Set the author and title fields when this object
      * is constructed.
-     */
-    public Book(String bookAuthor, String bookTitle, int pageTotal, String refNumber, int borrow)
+     */   //Book("Barnes & Kolling", "Objects First with BlueJ 6th Ed", 666, true);
+    public Book(String bookAuthor, String bookTitle, int pageTotal, boolean courseText)
     {
         author = bookAuthor;
         title = bookTitle;
@@ -49,9 +50,14 @@ class Book
         return refNumber;
     }
     
-    public int getBorrow()
+    public int getBorrowed()
     {
         return borrow;
+    }
+    
+    public boolean isCourseText()
+    {
+        return courseText;
     }
     
     //Mutator Methods
