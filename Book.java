@@ -50,4 +50,13 @@ class Book
     {
         System.out.println("The title is: "+title);
     }
+    
+    public void printDetails()
+    {
+        System.out.println("********");
+        System.out.println("Title: "+title);
+        System.out.println("Author: "+author);
+        System.out.println("Pages: "+pages);
+        System.out.println("********");
+    }
 }
